@@ -13,8 +13,19 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 
 function SideBar() {
   return (
-    <div>SideBar</div>
-  )
+    <div className='sidebar'>
+        <SideBarRow selected Icon={HomeIcon} title='Home' />
+        <SideBarRow Icon={WhatshotIcon} title='Trending' />
+        <SideBarRow Icon={SubscriptionsIcon} title='Subscription' />
+        <hr />
+        <SideBarRow Icon={VideoLibraryIcon} title='Library' />
+        <SideBarRow Icon={HistoryIcon} title='History' />
+        <SideBarRow Icon={OndemandVideoIcon} title='Your Videos' />
+        <SideBarRow Icon={WatchLaterIcon} title='Watch Later' />
+        <SideBarRow Icon={ThumbUpIcon} title='Liked Vides' />
+        <hr />
+    </div>
+)
 }
 
 export default SideBar
